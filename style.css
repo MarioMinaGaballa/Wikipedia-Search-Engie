@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Joan", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+nav h2 {
+  color: #5E548E; /* لون أرجواني فاتح */
+}
+footer{
+text-align: center;
+}
+.search {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 4px;
+  font-size: 16px;
+  border: 2px solid #9F86C0; /* لون أرجواني متوسط */
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.search input:hover {
+  border: 4px solid #5E548E; /* لون أرجواني فاتح */
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.results {
+  flex: 1;
+  min-width: 260px;
+  box-shadow: 0px 0px 2px 2px #9F86C0; /* لون أرجواني متوسط */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.results:hover {
+  box-shadow: 0px 0px 5px 5px #5E548E; /* لون أرجواني فاتح */
+}
+
+.results h3 {
+  color: #5E548E; /* لون أرجواني فاتح */
+  font-size: 20px;
+}
+
+.results p {
+  margin: 6px 2px;
+  line-height: 24px;
+  color: #231942; /* لون أرجواني غامق */
+  padding: 3px;
+  font-size: 15px;
+}
+
+.results a {
+  background-color: #9F86C0; /* لون أرجواني متوسط */
+  padding: 6px 12px;
+  color: #f7f7f7;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.results a:hover {
+  background-color: #5E548E; /* لون أرجواني فاتح */
+  border: none;
+}
+
+/* Media Queries للشاشات الصغيرة (الهواتف المحمولة) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .container {
+    width: 85%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+  }
+}
